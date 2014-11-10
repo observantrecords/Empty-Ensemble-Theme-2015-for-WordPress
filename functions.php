@@ -7,7 +7,7 @@
  */
 
 namespace ObservantRecords\WordPress\Themes\EmptyEnsemble {
-	const WP_TEXT_DOMAIN = 'eponymous4';
+	const WP_TEXT_DOMAIN = 'emptyensemble';
 }
 
 
