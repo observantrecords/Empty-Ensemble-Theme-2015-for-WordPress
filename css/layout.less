@@ -1,0 +1,138 @@
+/*
+    Document   : layout
+    Created on : Jul 31, 2012, 9:14:47 PM
+    Author     : Greg Bueno
+    Description:
+        Control layout for desktop web browsers.
+*/
+
+@dark-red-brown: #402C29;
+@light-grey: #CBCBCB;
+
+#masthead {
+	margin-bottom: 1.5em;
+	header {
+	}
+}
+
+.nav-ul {
+	margin-top: 1.5em;
+	list-style-type: none;
+}
+
+#nav-main {
+	ul {
+		.nav-ul;
+		li {
+			float: left;
+			margin: 0 24px 0 0;
+			padding: 0;
+		}
+	}
+}
+
+ul#nav-social {
+	margin-top: 20px;
+	padding-left: 0px;
+	margin-left: 0px;
+	li {
+    	display: inline-block;
+    	margin: 0;
+    	padding: 0;
+		margin-left: 6px;
+	}
+}
+
+
+#container {
+}
+
+#content {
+}
+
+#column-1 {
+}
+
+#column-2 {
+}
+
+#footer {
+	background-color: #C9C9C9;
+	background-image: url('white_carbonfiber.png');
+}
+
+#splash {
+}
+
+#music-index {
+}
+
+.inline-list {
+	list-style-type: none;
+	li {
+		display: inline;
+		margin: 0 12px 0 0;
+		padding: 0;
+	}
+	li:before {
+		content: "» ";
+	}
+}
+
+.bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 60%;
+	z-index: -1;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+}
+
+input[type=text], input[type=email], input[type=password], select, textarea
+{
+	font-size: 100%;
+	font-family: inherit;
+	border: 1px solid #BBB;
+	border-radius: 4px;
+	padding: 3px;
+}
+
+table.track-table
+{
+	border: 1px dotted @dark-red-brown;
+	border-collapse: collapse;
+	thead {
+		th {
+			border: 1px dotted #999;
+			font-size: 7pt;
+			color: #FFF;
+			background-color: #333;
+		}
+	}
+	tbody {
+		tr:nth-child(2n) td {
+			background-color: @light-grey;
+		}
+		td {
+			border: 1px dotted #999;
+		}
+		td.track-column {
+			width: 50px;
+		}
+		td.play-column {
+			width: 20px;
+		}
+	}
+}
+
+ul.album-list {
+	margin-left: 0px;
+	li {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    
+}
