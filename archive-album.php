@@ -65,7 +65,7 @@ endif;
 				</p>
 
 				<ul class="album-list">
-					<li><strong><a href="releases/<?php echo $album->album_alias; ?>"><?php echo $album->album_title; ?></a></strong></li>
+					<li><strong><a href="/releases/<?php echo $album->album_alias; ?>"><?php echo $album->album_title; ?></a></strong></li>
 				</ul>
 			</div>
 					<?php if ($r % 4 == 0):?>
