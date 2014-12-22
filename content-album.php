@@ -10,7 +10,7 @@
  * @since Musicwhore 2014 1.0
  */
 
-namespace ObservantRecords\WordPress\Themes\Eponymous4;
+namespace ObservantRecords\WordPress\Themes\EmptyEnsemble;
 
 use ObservantRecords\WordPress\Plugins\ArtistConnector\Models\Release;
 use ObservantRecords\WordPress\Plugins\ArtistConnector\Models\Track;
