@@ -10,11 +10,12 @@
  * @since Musicwhore 2014 1.0
  */
 
-namespace ObservantRecords\WordPress\Themes\ObservantRecords2015;
+namespace ObservantRecords\WordPress\Themes\EmptyEnsemble;
 
 use ObservantRecords\WordPress\Plugins\ArtistConnector\Models\Album;
 use ObservantRecords\WordPress\Plugins\ArtistConnector\Models\Artist;
 use ObservantRecords\WordPress\Plugins\ArtistConnector\Models\Release;
+use ObservantRecords\WordPress\Themes\ObservantRecords2015\TemplateTags;
 
 $album_model = new Album();
 $albums = $album_model->getAll( array( 'order_by' => 'album_release_date desc' ) );
