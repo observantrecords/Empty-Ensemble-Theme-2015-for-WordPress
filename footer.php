@@ -11,6 +11,7 @@ namespace ObservantRecords\WordPress\Themes\EmptyEnsemble;
 use \ObservantRecords\WordPress\Themes\ObservantRecords2015\TemplateTags;
 
 ?>
+		</div>
 	</div>
 
 	<div id="footer">

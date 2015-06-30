@@ -1,0 +1,54 @@
+/*
+Theme Name: Empty Ensemble 2015
+Author: Greg Bueno
+Author URI: http://vigilantmedia.com/
+Description: A WordPress theme customized for Empty Ensemble, based on the Observant Records theme.
+Template: observantrecords2015
+Version: 1.0
+Text Domain: eponymous4
+*/
+@import url("../observantrecords2015/style.css");
+/*
+    Document   : layout
+    Created on : Jul 31, 2012, 9:14:47 PM
+    Author     : Greg Bueno
+    Description:
+        Control layout for desktop web browsers.
+*/
+#masthead {
+  background-color: inherit;
+  background-image: none; }
+
+.bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  z-index: -1;
+  opacity: 0.1;
+  filter: alpha(opacity=10); }
+
+/* 
+    Document   : typography
+    Created on : Jul 31, 2012, 9:15:04 PM
+    Author     : Greg Bueno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#title {
+  font-family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
+  text-transform: lowercase; }
+  #title a {
+    text-decoration: none;
+    color: #000; }
+
+#masthead a, #masthead a:hover {
+  color: #333; }
+
+#footer {
+  color: #FFF; }
+
+body {
+  font-family: "Cambay", "Helvetica", "Arial", sans-serif; }
+
+/*# sourceMappingURL=style.dev.css.map */
