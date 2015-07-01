@@ -18,6 +18,7 @@ namespace ObservantRecords\WordPress\Themes\EmptyEnsemble;
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -26,19 +27,26 @@ namespace ObservantRecords\WordPress\Themes\EmptyEnsemble;
 
 <body>
 
-	<div id="container" class="container">
-		<div id="masthead" class="row">
-			<header class="col-md-6">
-				<h1 id="title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo __('Home', WP_TEXT_DOMAIN); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?>
-					</a>
-				</h1>
-			</header>
+	<div id="masthead">
+		<div class="container">
+			<div class="row">
+				<header class="col-md-6">
+					<h1 id="title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo __('Home', WP_TEXT_DOMAIN); ?>" rel="home">
+							<?php bloginfo( 'name' ); ?>
+						</a>
+					</h1>
+				</header>
 
-			<nav id="nav-main" class="col-md-6">
-				<?php $nav_menu_args = array( 'theme_location' => 'primary', 'items_wrap' => '<ul id="%1$s" class="%2$s links">%3$s</ul>' ); ?>
-				<?php if ( function_exists( 'bootstrap_page_menu' ) ) { $nav_menu_args[ 'fallback_cb' ] = 'bootstrap_page_menu'; } ?>
-				<?php wp_nav_menu( $nav_menu_args ); ?>
-			</nav>
+				<nav id="nav-header" class="col-md-6">
+					<?php $nav_menu_args = array( 'theme_location' => 'primary', 'items_wrap' => '<ul id="%1$s" class="%2$s links">%3$s</ul>' ); ?>
+					<?php if ( function_exists( 'bootstrap_page_menu' ) ) { $nav_menu_args[ 'fallback_cb' ] = 'bootstrap_page_menu'; } ?>
+					<?php wp_nav_menu( $nav_menu_args ); ?>
+				</nav>
+			</div>
 		</div>
+	</div>
+
+	<div id="container" class="container">
+
+		<div id="content" class="row">
