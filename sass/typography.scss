@@ -6,11 +6,7 @@
         Purpose of the stylesheet follows.
 */
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: Helvetica, Arial, sans-serif;
-}
-
-#title { 
+#title {
 	font-family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
 	text-transform: lowercase;
 	a {
@@ -19,21 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#content {
-	font-family: 'Georgia', serif;
+#masthead a, #masthead a:hover {
+	color: #333;
 }
 
-table.track-table
-{
-	font-family: 'Helvetica', 'Arial', sans-serif;
+#footer {
+	color: #FFF;
 }
 
-.smaller
-{
-	font-size: smaller;
-}
 
-.submitted {
-	font-style: italic;
+body {
+	font-family: $font-family-base;
 }
 
