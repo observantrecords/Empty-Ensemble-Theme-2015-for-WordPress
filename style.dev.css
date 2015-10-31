@@ -16,7 +16,7 @@ Text Domain: eponymous4
         Control layout for desktop web browsers.
 */
 #masthead {
-  background-color: inherit;
+  background-color: transparent;
   background-image: none; }
 
 .bg {
