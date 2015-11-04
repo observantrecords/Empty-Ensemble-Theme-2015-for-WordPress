@@ -8,6 +8,7 @@
 
 #title {
   font-family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
+  font-size: 45px;
   text-transform: lowercase;
   a {
     text-decoration: none;
@@ -27,3 +28,8 @@ body {
   font-family: $font-family-base;
 }
 
+@media screen and (max-width: 992px) {
+  #title {
+    font-size: 36px;
+  }
+}
