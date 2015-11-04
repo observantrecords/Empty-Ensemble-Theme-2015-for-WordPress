@@ -30,7 +30,7 @@ namespace ObservantRecords\WordPress\Themes\EmptyEnsemble;
 	<div id="masthead">
 		<div class="container">
 			<div class="row">
-				<header class="col-md-6">
+				<header class="col-md-5">
 					<h1 id="title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo __('Home', WP_TEXT_DOMAIN); ?>" rel="home">
 							<?php bloginfo( 'name' ); ?>
@@ -38,7 +38,7 @@ namespace ObservantRecords\WordPress\Themes\EmptyEnsemble;
 					</h1>
 				</header>
 
-				<nav id="nav-header" class="col-md-6">
+				<nav id="nav-header" class="col-md-7">
 					<?php $nav_menu_args = array( 'theme_location' => 'primary', 'items_wrap' => '<ul id="%1$s" class="%2$s links">%3$s</ul>' ); ?>
 					<?php if ( function_exists( 'bootstrap_page_menu' ) ) { $nav_menu_args[ 'fallback_cb' ] = 'bootstrap_page_menu'; } ?>
 					<?php wp_nav_menu( $nav_menu_args ); ?>

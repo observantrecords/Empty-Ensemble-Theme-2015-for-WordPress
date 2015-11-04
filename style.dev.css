@@ -4,7 +4,7 @@ Author: Greg Bueno
 Author URI: http://vigilantmedia.com/
 Description: A WordPress theme customized for Empty Ensemble, based on the Observant Records theme.
 Template: observantrecords2015
-Version: 2.0
+Version: 2.1
 Text Domain: emptyensemble
 */
 @import url("../observantrecords2015/style.css");
@@ -15,9 +15,15 @@ Text Domain: emptyensemble
     Description:
         Control layout for desktop web browsers.
 */
+body {
+  background-image: url("assets/graphics/subtle_dots.png"); }
+
 #masthead {
   background-color: transparent;
   background-image: none; }
+
+#title {
+  margin-top: 10px; }
 
 .bg {
   position: fixed;
@@ -37,6 +43,7 @@ Text Domain: emptyensemble
 */
 #title {
   font-family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
+  font-size: 45px;
   text-transform: lowercase; }
   #title a {
     text-decoration: none;
@@ -50,5 +57,9 @@ Text Domain: emptyensemble
 
 body {
   font-family: "Cambay", "Helvetica", "Arial", sans-serif; }
+
+@media screen and (max-width: 992px) {
+  #title {
+    font-size: 36px; } }
 
 /*# sourceMappingURL=style.dev.css.map */
