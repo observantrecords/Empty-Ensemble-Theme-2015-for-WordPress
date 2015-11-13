@@ -45,7 +45,7 @@ use \ObservantRecords\WordPress\Themes\ObservantRecords2015\TemplateTags;
 		</div>
 	</div>
 
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/empty_ensemble_empty_set_logo.png" class="bg" alt="[Empty Ensemble Logo]" />
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/empty_ensemble_empty_set_logo.png" class="bg" alt="[Empty Ensemble Logo]" />
 
 	<?php wp_footer(); ?>
 
