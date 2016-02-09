@@ -20,13 +20,13 @@ $album_model = new Album();
 $lps = $album_model->getManyBy( 'album_format_id', 1,  array( 'order_by' => 'album_order' ) );
 $eps = $album_model->getManyBy( 'album_format_id', 3,  array( 'order_by' => 'album_order' ) );
 $singles = $album_model->getManyBy( 'album_format_id', 2,  array( 'order_by' => 'album_order' ) );
-$compilations = $album_model->getManyBy( 'album_format_id', 4,  array( 'order_by' => 'album_order' ) );
+// $compilations = $album_model->getManyBy( 'album_format_id', 4,  array( 'order_by' => 'album_order' ) );
 
 $albums = array(
 	'Albums' => $lps,
 	'EPs' => $eps,
 	'Singles' => $singles,
-	'Compilations' => $compilations,
+	// 'Compilations' => $compilations,
 );
 
 $artist_model = new Artist();
