@@ -17,13 +17,13 @@ use ObservantRecords\WordPress\Plugins\ArtistConnector\Models\Albums\Album;
 $lps = Album::with( 'artist', 'primary_release' )->where( 'album_format_id', 1 )->orderBy( 'album_order' )->get();
 $eps = Album::with( 'artist', 'primary_release' )->where( 'album_format_id', 3 )->orderBy( 'album_order' )->get();
 $singles = Album::with( 'artist', 'primary_release' )->where( 'album_format_id', 2 )->orderBy( 'album_order' )->get();
-$compilations = Album::with( 'artist', 'primary_release' )->where( 'album_format_id', 4 )->orderBy( 'album_order' )->get();
+//$compilations = Album::with( 'artist', 'primary_release' )->where( 'album_format_id', 4 )->orderBy( 'album_order' )->get();
 
 $albums = array(
 	'Albums' => $lps,
 	'EPs' => $eps,
 	'Singles' => $singles,
-	'Compilations' => $compilations,
+	//'Compilations' => $compilations,
 );
 
 $album_entries = get_posts( array(
